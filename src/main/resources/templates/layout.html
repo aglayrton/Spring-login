@@ -11,7 +11,6 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="clínica médica com agendamento de consultas online" />
 <meta name="author" content="ballem" />
-<link rel="icon" th:href="@{/image/favicon.ico}" />
 
 <!-- Bootstrap core CSS -->
 <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css(v=${version}) }" rel="stylesheet" />
@@ -26,9 +25,6 @@
 
 </head>
 <body>
-	<header th:replace="fragments/header :: cabecalho">
-		<div>header</div>
-	</header>
 
 	<div class="layout-main">	
 		<section layout:fragment="corpo">		

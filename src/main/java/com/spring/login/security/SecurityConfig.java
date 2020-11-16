@@ -21,18 +21,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		http.authorizeRequests()
 		//Acesso públicos
 		.antMatchers("/webjars/**", "/css/**", "/image/**", "/js/**").permitAll()
-		
 		.anyRequest().authenticated()
-		
 		.and()
 			.formLogin()
 			.loginPage("/login")
-			.defaultSuccessUrl("/", true)
+			.defaultSuccessUrl("/")
 			.failureUrl("/login-error")
 			.permitAll()
 		.and()
 			.logout()
-			.logoutSuccessUrl("/");
+			.logoutSuccessUrl("/login")
+			.permitAll();
+		
 	}
 	
 	@Override

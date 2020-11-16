@@ -1,4 +1,4 @@
-package com.spring.entitys;
+package com.spring.login.entitys;
 
 import java.util.ArrayList;
 import java.util.List;
